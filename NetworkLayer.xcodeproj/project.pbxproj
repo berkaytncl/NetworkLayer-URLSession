@@ -13,6 +13,11 @@
 		EB5D47E92ACB0190007A10D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB5D47E72ACB0190007A10D6 /* Main.storyboard */; };
 		EB5D47EB2ACB0191007A10D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB5D47EA2ACB0191007A10D6 /* Assets.xcassets */; };
 		EB5D47EE2ACB0191007A10D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB5D47EC2ACB0191007A10D6 /* LaunchScreen.storyboard */; };
+		EB5D47F72ACB4258007A10D6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5D47F62ACB4258007A10D6 /* NetworkManager.swift */; };
+		EB5D47FA2ACB42CA007A10D6 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5D47F92ACB42CA007A10D6 /* Endpoint.swift */; };
+		EBA7D4752ACC2C210017E147 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA7D4742ACC2C210017E147 /* User.swift */; };
+		EBA7D4772ACC53C60017E147 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA7D4762ACC53C60017E147 /* Post.swift */; };
+		EBA7D4792ACC54120017E147 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA7D4782ACC54120017E147 /* Comment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		EB5D47EA2ACB0191007A10D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB5D47ED2ACB0191007A10D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB5D47EF2ACB0191007A10D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB5D47F62ACB4258007A10D6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		EB5D47F92ACB42CA007A10D6 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		EBA7D4742ACC2C210017E147 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EBA7D4762ACC53C60017E147 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		EBA7D4782ACC54120017E147 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 		EB5D47E02ACB0190007A10D6 /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
+				EB5D47F52ACB420F007A10D6 /* Manager */,
 				EB5D47E12ACB0190007A10D6 /* AppDelegate.swift */,
 				EB5D47E32ACB0190007A10D6 /* SceneDelegate.swift */,
 				EB5D47E52ACB0190007A10D6 /* ViewController.swift */,
@@ -65,6 +76,26 @@
 				EB5D47EF2ACB0191007A10D6 /* Info.plist */,
 			);
 			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		EB5D47F52ACB420F007A10D6 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				EB5D47F82ACB4294007A10D6 /* Model */,
+				EB5D47F62ACB4258007A10D6 /* NetworkManager.swift */,
+				EB5D47F92ACB42CA007A10D6 /* Endpoint.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		EB5D47F82ACB4294007A10D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EBA7D4742ACC2C210017E147 /* User.swift */,
+				EBA7D4782ACC54120017E147 /* Comment.swift */,
+				EBA7D4762ACC53C60017E147 /* Post.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +169,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB5D47F72ACB4258007A10D6 /* NetworkManager.swift in Sources */,
 				EB5D47E62ACB0190007A10D6 /* ViewController.swift in Sources */,
+				EBA7D4752ACC2C210017E147 /* User.swift in Sources */,
+				EBA7D4792ACC54120017E147 /* Comment.swift in Sources */,
 				EB5D47E22ACB0190007A10D6 /* AppDelegate.swift in Sources */,
 				EB5D47E42ACB0190007A10D6 /* SceneDelegate.swift in Sources */,
+				EBA7D4772ACC53C60017E147 /* Post.swift in Sources */,
+				EB5D47FA2ACB42CA007A10D6 /* Endpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
